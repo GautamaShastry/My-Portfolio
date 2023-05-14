@@ -1,0 +1,86 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h5 {
+    text-align: center;
+    font-size: 5rem;
+    /* margin-top: 2rem; */
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.experience__container > div {
+    background: var(--color-light);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    align-content: center;
+    transition: var(--transition);
+}
+
+.experience__container h3 {
+    margin: 1.5rem 1rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.experience__container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
+
+.experience__bar{
+    width: 100%;
+    transition: var(--transition);
+    margin: 0 2rem;
+}
+
+.experience__bar:hover{
+    transform: scale(1.05)
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0 2.5rem;
+    padding-bottom: 2.2rem;
+}
+
+.experience__icon{
+    color: var(--color-primary);
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES (Tablets) */
+@media screen and (max-width: 1024px) {
+    .experience__container{
+        grid-template-columns: 0.9fr;
+        justify-content: center;
+    }
+
+    .experience__bar > div{
+        width: 90%;
+    }
+
+}
+
+/* MEDIA QUERIES (Phones) */
+@media screen and (max-width: 600px) {
+    .experience__container{
+        width: 100%;
+    }
+
+}
