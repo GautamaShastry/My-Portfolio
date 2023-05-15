@@ -58,8 +58,8 @@ section {
     padding: 10rem 0;
     background: var(--color-light);
     transition: var(--transition);
-    margin-top: 8rem;
-    height: 100vh;
+    /* margin-top: 8rem;
+    height: 100vh; */
 }
 
 section:nth-child(even) {
